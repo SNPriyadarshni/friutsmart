@@ -1,0 +1,116 @@
+.signin-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("C:\priya\website\fruitstore\public\images\fruitback.jpg") no-repeat center center/cover;
+}
+
+.glass-card {
+  width: 300px;
+  padding: 30px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glass-card h2 {
+  margin-bottom: 10px;
+}
+
+.glass-card input {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.glass-card input::placeholder {
+  color: #eee;
+}
+
+.glass-card button {
+  padding: 10px;
+  background: #00c9ff;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.glass-card button:hover {
+  background: #00b3e6;
+}
+
+.or-divider {
+  margin: 10px 0;
+  color: #ccc;
+  font-size: 14px;
+}
+.login-link {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #eee;
+}
+
+.login-link span {
+  color: #00c9ff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.glass-google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  padding: 12px 20px;
+  width: 280px;
+  margin: 15px auto;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.glass-google-btn:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.google-icon-wrapper {
+  background: white;
+  border-radius: 50%;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.glass-google-logo {
+  width: 20px;
+  height: 20px;
+}
+
+.glass-google-text {
+  color: #fff;
+}
+
+

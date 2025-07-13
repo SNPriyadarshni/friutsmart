@@ -1,0 +1,220 @@
+/* PaymentDetails.css */
+
+
+.payment-container {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background: url("C:\priya\website\fruitstore\public\images\amount.jpg") no-repeat center center / cover;
+  padding: 60px;
+}
+
+
+.payment-card {
+  width: 320px;
+  padding: 30px;
+  border-radius: 16px;
+  background: rgba(233, 211, 211, 0.1);
+  backdrop-filter: blur(18px);
+  color: #000000;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.payment-card h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.payment-amount {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.payment-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.payment-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+}
+
+.place-order-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #00c9ff, #92fe9d);
+  color: rgb(0, 0, 0);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.place-order-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Glass popup */
+.popup-glass {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(20px);
+  color: rgb(6, 6, 6);
+  text-align: center;
+  width: 320px;
+  max-width: 90vw;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  z-index: 1000;
+}
+
+
+.popup-glass h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+/* Confetti full screen */
+.celebration {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  background-image:
+    radial-gradient(circle, #ff69b4 4px, transparent 4px),
+    radial-gradient(circle, #87cefa 4px, transparent 4px),
+    radial-gradient(circle, #ffa07a 4px, transparent 4px),
+    radial-gradient(circle, #ffff00 4px, transparent 4px),
+    radial-gradient(circle, #7cfc00 4px, transparent 4px),
+    radial-gradient(circle, #00ffff 4px, transparent 4px),
+    radial-gradient(circle, #ff4500 4px, transparent 4px),
+    radial-gradient(circle, #da70d6 4px, transparent 4px),
+    radial-gradient(circle, #00fa9a 4px, transparent 4px),
+    radial-gradient(circle, #ff6347 4px, transparent 4px),
+    radial-gradient(circle, #f08080 4px, transparent 4px);
+  background-repeat: repeat;
+  background-size: 100px 200px;
+  animation: confetti-fall 30s linear infinite;
+  z-index: 999;
+}
+
+@keyframes confetti-fall {
+  0% {
+    background-position: 0 -100vh;
+  }
+  100% {
+    background-position: 0 100vh;
+  }
+}
+.place-order-btn.fancy {
+  margin-top: 20px;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #050505;
+  background: rgba(0, 200, 255, 0.2);
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  box-shadow: 0 0 12px rgba(0, 200, 255, 0.4);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.place-order-btn.fancy::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(120deg, #00c9ff, #92fe9d);
+  transform: rotate(45deg);
+  transition: opacity 0.4s ease;
+  opacity: 0;
+  z-index: 0;
+}
+
+.place-order-btn.fancy:hover::before {
+  opacity: 0.2;
+}
+
+.place-order-btn.fancy:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 200, 255, 0.6);
+}
+.address-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+  color: rgb(0, 0, 0);
+}
+
+.address-section label {
+  font-weight: bold;
+}
+
+.address-section textarea,
+.address-section select,
+.address-section input {
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  color: rgb(0, 0, 0);
+}
+
+.address-section select option {
+  color: black;
+}
+
+.address-section input::placeholder {
+  color: #000000;
+}
+
+.error-text {
+  color: #000000;
+  font-size: 13px;
+}
+
+
+.cart-summary {
+  text-align: left;
+  margin: 10px 0;
+  color: #000000;
+}
+
+.cart-summary ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.cart-summary li {
+  padding: 4px 0;
+}
